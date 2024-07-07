@@ -1,0 +1,16 @@
+<div class="product-card" [ngStyle]="{'width':width}">
+    @if(show){
+        <div class="card-header">
+            <span class="badge new-season">New Season</span>
+        </div>
+    }    
+    <div class="image">
+        <img src="data:image/png;base64,{{prod.imagenBase64}}" alt="Product" class="product-image">
+    </div>
+    <div class="card-body">
+        <h2 class="product-title">{{prod.nombre}}</h2>
+        <p class="product-description" style="text-overflow: ellipsis; width: 100%;">{{prod.descripcion}}</p>
+        <p class="product-price">${{prod.precio}}</p>
+        <button class="add-to-cart">Add to cart</button>
+    </div>
+</div>

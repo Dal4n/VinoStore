@@ -1,0 +1,94 @@
+<div class="banner-card">
+    <h2 class="banner-title">Tienda Vino</h2>
+    <h2 class="banner-subtitle">Vinos Extraordinarios para Personas Extraordinarias</h2>
+    <div class="img-banner">
+        <img src="../../../assets/imgs/banner.jpeg" alt="Banner">
+    </div>
+</div>
+
+<header class="hero-section">
+    <div class="hero-content">
+        <p style="color:black">Explora nuestra selección curada de vinos finos de todo el mundo.</p>
+        <div class="search-bar">
+            <input type="date" placeholder="Fecha">
+            <input type="number" placeholder="Presupuesto">
+            <input type="text" placeholder="Invitados">
+            <button>Buscar</button>
+        </div>
+        <div class="stats">
+            <div class="stat-item">
+                <h3>10M+</h3>
+                <p>Total de Clientes</p>
+            </div>
+            <div class="stat-item">
+                <h3>09+</h3>
+                <p>Años de Experiencia</p>
+            </div>
+            <div class="stat-item">
+                <h3>12K</h3>
+                <p>Total de Productos</p>
+            </div>
+            <div class="stat-item">
+                <h3>5.0</h3>
+                <p>Calificación Promedio</p>
+            </div>
+        </div>
+    </div>
+</header>
+
+<section class="best-products">
+    @if(products){
+        <div class="products">
+            @for (prod of randomProducts; track $index) {
+                <app-card [prod]="prod" [show]="true" [width]="'300px'"></app-card>
+            }        
+        </div>
+    }
+</section>
+
+<section class="how-it-works">
+    <h2>Cómo Funciona</h2>
+    <div class="steps">
+        <div class="step">
+            <h3>Elige tu Vino</h3>
+            <p>Explora nuestra selección de vinos y encuentra tu combinación perfecta.</p>
+        </div>
+        <div class="step">
+            <h3>Realiza tu Pedido</h3>
+            <p>Haz tu compra fácilmente a través de nuestro checkout seguro.</p>
+        </div>
+        <div class="step">
+            <h3>Disfruta</h3>
+            <p>Recibe tu vino y disfrútalo con amigos y familiares.</p>
+        </div>
+    </div>
+</section>
+
+<section class="packages">
+    <h2>Paquetes de Vino</h2>
+    <div class="package-cards">
+        <div class="package-card">
+            <h3>Paquete de Vino Tinto</h3>
+            <p>$125</p>
+            <button class="btn btn-outline-secondary">Ver Más</button>
+        </div>
+        <div class="package-card">
+            <h3>Paquete de Vino Blanco</h3>
+            <p>$115</p>
+            <button class="btn btn-outline-secondary">Ver Más</button>
+        </div>
+        <div class="package-card">
+            <h3>Paquete de Vino Mixto</h3>
+            <p>$135</p>
+            <button class="btn btn-outline-secondary">Ver Más</button>
+        </div>
+    </div>
+</section>
+
+<section class="testimonials">
+    <h2>Testimonios de Clientes</h2>
+    <div class="testimonial">
+        <p>"Esta tienda tiene una increíble selección de vinos. ¡Encontré exactamente lo que buscaba!"</p>
+        <p>- Donald Sullivan</p>
+    </div>
+</section>

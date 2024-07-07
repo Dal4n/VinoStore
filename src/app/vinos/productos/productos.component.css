@@ -1,0 +1,7 @@
+.catalogo {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas de tamaño igual */
+    gap: 20px; /* Espacio entre las celdas del grid */
+    height: auto;
+}
+  

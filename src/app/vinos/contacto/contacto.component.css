@@ -1,0 +1,16 @@
+.container {
+    max-width: 800px;
+    margin: auto;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+form .form-group {
+    margin-bottom: 15px;
+}
+
+button {
+    width: 100%;
+}

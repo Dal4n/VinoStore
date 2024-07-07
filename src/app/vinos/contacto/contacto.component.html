@@ -1,0 +1,43 @@
+<div class="container p-2">
+    <div class="row">
+        <div class="col-md-6">
+            <h2>Escríbenos</h2>
+            <form>
+                <div class="d-flex gap-2">
+                    <div class="form-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+                    </div>
+                    <div class="form-group">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email">
+                </div>
+                <div class="form-group">
+                    <label for="asunto">Asunto</label>
+                    <input type="text" class="form-control" id="asunto" placeholder="Asunto">
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" rows="4" placeholder="Mensaje" style="resize: none;"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+            </form>
+        </div>
+        <div class="col-md-6">
+            <h2>Oficinas</h2>
+            <address style="font-size: 15px; font-family: sans-serif;">
+                <strong>Dirección:</strong><br>
+                Carlos B. Zetina No 80, Parque Industrial Xalostoc.<br>
+                Ecatepec, Edo. de México, 55348<br>
+                <strong>Conmutador: </strong> (55) 5747 45 45 y (55) 4749 45 45<br>
+                <strong>Atención a Clientes: </strong> (55) 5747 45 46<br>
+                <strong>Email: </strong> <a href="mailto:{{correo}}">{{correo}}</a>
+            </address>
+        </div>
+    </div>
+</div>

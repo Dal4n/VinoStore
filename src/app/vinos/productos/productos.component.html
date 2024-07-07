@@ -1,0 +1,27 @@
+<div class="p-3">
+    <div style="width: 100%;">
+        <app-input [label]="'Buscar'" (onInputValue)="getValue($event)"></app-input>
+
+        <div style="display: flex; gap: 10px">
+            <div *ngFor="let category of categorias" class="form-check">
+                <input type="checkbox" class="form-check-input" id="{{category.nombre}}"
+                    (change)="filterByCategory(category.nombre, $event)">
+                <label class="form-check-label" for="{{category.nombre}}">
+                    {{category.nombre}}
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <section class="catalogo">
+        @if(filered.length > 0){
+            @for (prod of filered; track $index) {
+                <app-card [prod]="prod" [show]="false" [width]="'100%'"></app-card>
+            }
+        } @else {
+            <p>No se encontraron productos.</p>
+        }
+    </section>
+
+
+</div>
